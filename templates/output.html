@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <title>AppointmentChecker</title>
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+     
+                   Available Appointments!
+        </div>
+        <br/>
+
+        {%for i in range(0,len)%}
+            {{appointments[i]}}
+            <br/>
+            <br/>
+        {%endfor%}
+        </div>
+</body>
+</html>
